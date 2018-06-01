@@ -72,6 +72,7 @@
         store.commit('decrement')
       },
       bindDateChange () {
+        console.log('ffff')
       }
     }
   }
