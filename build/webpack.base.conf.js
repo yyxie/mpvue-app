@@ -7,11 +7,6 @@ var MpvuePlugin = require('webpack-mpvue-asset-plugin')
 var glob = require('glob')
 
 function resolve (dir) {
-  console.log(__dirname);
-  console.log('----------------')
-  console.log(dir);
-  console.log('----------------')
-  console.log(path.join(__dirname, '..', dir))
   return path.join(__dirname, '..', dir)
 }
 
