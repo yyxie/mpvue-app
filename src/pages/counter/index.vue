@@ -1,5 +1,5 @@
 <template>
-<!--  <div class="counter-warp">
+ <div class="counter-warp">
     <div class="myBackground">ddd</div>
     <p>Vuex counter：{{ count }}</p>
     <p>
@@ -12,9 +12,9 @@
       <view class="picker">
         当前选择: {{date}}
       </view>
-    </picker>-->
+    </picker>
     <web-view src="https://mp.weixin.qq.com/"></web-view>
-<!--  </div>-->
+  </div>
 </template>
 
 <script>
