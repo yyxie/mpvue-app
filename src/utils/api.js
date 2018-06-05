@@ -6,7 +6,7 @@ const api = {
   authorList: () => request.get(`${host}/index/list_author_recommend.html`)
 }
 
-export default { // 作为组件库(install)
+export default {
   install: function (Vue, name = '$http') { // 自定义名字(vue-resource也使用$http)
     Object.defineProperty(Vue.prototype, name, {value: api})// 将组件库挂载在原型对象上
   }
