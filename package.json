@@ -8,8 +8,7 @@
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "rimraf dist && node build/build.js",
-    "lint": "eslint --ext .js,.vue src",
-    "commit": "git cz"
+    "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "flyio": "^0.5.9",
@@ -81,10 +80,5 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ],
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
-  }
+  ]
 }
