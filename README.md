@@ -10,8 +10,8 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+# 启动项目
+npm run start
 
 # build for production with minification
 npm run build
@@ -71,8 +71,11 @@ npm run build --report
   [详见](https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?search-key=web-view)
   需要注意的是在微信开发者工具中想要看webview效果需要将详情中 "不校验安全域名、web-view 域名、TLS 版本以及 HTTPS 证书"勾选上
   否则就会出现内嵌页面展示不了
-  
+
 # 使用vuex
+
+# 注意事项
+  在微信小程序里面 img标签仅支持网络图片
 
 ```
 
