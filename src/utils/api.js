@@ -2,7 +2,7 @@ import request from './http'
 
 const host = 'https://h5api.zhefengle.cn'
 const api = {
-  // test地址
+
   authorList: () => request.get(`${host}/index/list_author_recommend.html`)
 }
 
