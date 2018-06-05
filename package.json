@@ -87,5 +87,9 @@
       "path": "node_modules/cz-conventional-changelog"
     }
   },
-  "husky": {"hooks":{"commit-msg":"commitlint -e $GIT_PARAMS"}}
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  }
 }
