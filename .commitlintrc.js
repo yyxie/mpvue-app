@@ -4,7 +4,7 @@ module.exports = {
     'subject-case': [
       2,
       'always',
-      ['sentence-case', 'start-case', 'pascal-case', 'upper-case']
+      ['camel-case', 'kebab-case', 'lower-case', 'snake-case']
     ]
   }
 }

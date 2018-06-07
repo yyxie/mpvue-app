@@ -26,14 +26,31 @@ npm run build --report
 
 # commitlint
 
- npm install --save-dev @commitlint/{config-conventional,cli}
- 在项目目录下配置.commitlintrc.js 用于相关的配置
- 在package.json 中添加
- "husky": {
-     "hooks": {
-         "commit-msg": "commitlint -e $GIT_PARAMS"
+  ## 安装commitlint
+    npm install --save-dev @commitlint/{config-conventional,cli}
+
+  ## 校验 commit message 的最佳方式是结合 git hook, 所以需要配合 Husky.
+    npm i husky@next
+    package.json 中添加:
+    "husky":{"hooks":{...,"commit-msg":"commitlint -e $GIT_PARAMS"}},
+
+  ## 添加配置
+    在项目目录下配置.commitlintrc.js 用于相关的配置
+    module.exports = {
+      extends: ['@commitlint/config-conventional']
+    }
+
+  ## 此时我们提交内容为中文还是不行，主要是config-conventional中配置的原因，我们可以通过修改.commitlintrc.js中rules来实现支持中文内容
+    module.exports = {
+      extends: ['@commitlint/config-conventional'],
+      rules: {
+        'subject-case': [
+          2,
+          'always',
+          ['camel-case', 'kebab-case', 'lower-case', 'snake-case']
+        ]
       }
- }
+    }
 
 # px2rpx
 
